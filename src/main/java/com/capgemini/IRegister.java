@@ -6,18 +6,18 @@ public interface IRegister {
 
     /**
      * Calculates the price to pay.
+     *
      * @param customer
      * @return toPay
      */
-    double checkOut(Customer customer);
+    void checkOut(Customer customer);
 
     /**
-     * Calculates the discount.
-     * @param customer
-     * @return amountOfDiscount
+     * calculates the amount of discount
+     * @param basket items in the basket
+     * @return discount amount
      */
-    double calculateDiscount(Customer customer);
-
+    double productDiscount(ArrayList<Product> basket);
 
 
 }
